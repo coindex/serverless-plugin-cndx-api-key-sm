@@ -1,6 +1,6 @@
 'use strict'
 
-class APIKeySMPlugin {
+class ApiKeySMPlugin {
 
   constructor(serverless, options) {
     this.serverless = serverless
@@ -28,7 +28,7 @@ class APIKeySMPlugin {
     this.serverless.cli.log('processing stack outputs...')
     const {
       AWSApiGatewayApiKeyId,
-      AWSSecretsManagerSecretAPIArn
+      AWSSecretsManagerSecretApiArn
     } = stackOutputs
 
     this.serverless.cli.log('getting api key value...')
@@ -41,7 +41,7 @@ class APIKeySMPlugin {
     await this.provider.request(
       'SecretsManager', 'putSecretValue',
       {
-        SecretId: AWSSecretsManagerSecretAPIArn,
+        SecretId: AWSSecretsManagerSecretApiArn,
         SecretString: apiKeyValue
       }
     )
@@ -50,4 +50,4 @@ class APIKeySMPlugin {
   }
 }
 
-module.exports = APIKeySMPlugin
+module.exports = ApiKeySMPlugin
