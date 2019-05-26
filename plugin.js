@@ -12,7 +12,7 @@ class APIKeySMPlugin {
   }
 
   async exportApiKey() {
-    this.serverless.cli.log('cndx-api-key-sm-plugin starting...')
+    this.serverless.cli.log('serverless-plugin-api-key-sm starting...')
 
     this.serverless.cli.log('getting stack...')
     const stack = (await this.provider.request(
@@ -46,7 +46,7 @@ class APIKeySMPlugin {
       }
     )
 
-    this.serverless.cli.log('cndx-api-key-sm-plugin finished...')
+    this.serverless.cli.log('serverless-plugin-api-key-sm finished...')
   }
 }
 

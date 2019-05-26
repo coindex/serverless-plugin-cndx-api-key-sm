@@ -1,5 +1,5 @@
 {
-  "name": "serverless-plugin-cndx-api-key-sm",
+  "name": "serverless-plugin-api-key-sm",
   "version": "1.0.0",
   "description": "serverless plugin to export a selected api gateway api key to a selected sm secret",
   "main": "plugin.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/coindex/serverless-plugin-cndx-api-key-sm.git"
+    "url": "https://github.com/smartinspereira/serverless-plugin-api-key-sm.git"
   },
   "author": "Sergio Martins Pereira <s@x42.io> (https://github.com/smartinspereira)",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/coindex/serverless-plugin-cndx-api-key-sm/issues"
+    "url": "https://github.com/smartinspereira/serverless-plugin-api-key-sm/issues"
   },
-  "homepage": "https://github.com/coindex/serverless-plugin-cndx-api-key-sm/#readme",
+  "homepage": "https://github.com/smartinspereira/serverless-plugin-api-key-sm/#readme",
   "devDependencies": {},
   "dependencies": {}
 }
