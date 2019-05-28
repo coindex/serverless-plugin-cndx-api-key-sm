@@ -1,6 +1,6 @@
 workflow "publish release to npm" {
   on = "release"
-  resolves = ["npm install"]
+  resolves = ["npm publish"]
 }
 
 action "npm install" {
