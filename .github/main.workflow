@@ -18,7 +18,7 @@ action "push: npm audit" {
 # on release workflow
 workflow "release: publish release to npm" {
   on = "release"
-  resolves = ["npm publish"]
+  resolves = ["release: npm publish"]
 }
 
 action "release: is publish release" {
