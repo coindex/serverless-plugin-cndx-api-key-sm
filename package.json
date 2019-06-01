@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-api-key-sm",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "serverless plugin to export a selected api gateway api key to a selected sm secret",
   "main": "plugin.js",
   "scripts": {
