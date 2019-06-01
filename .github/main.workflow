@@ -3,7 +3,13 @@ workflow "publish release to npm" {
   resolves = ["npm publish"]
 }
 
+action "is publish release" {
+  uses = "actions/bin/filter@master"
+  args = "action published"
+}
+
 action "npm install" {
+  needs = ["is publish release"]
   uses = "actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680"
   args = "install"
 }
